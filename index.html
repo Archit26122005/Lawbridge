@@ -1,0 +1,602 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Madhur Mithaas - Authentic Indian Sweets in Gurugram</title>
+  <meta name="description" content="Discover the finest traditional Indian sweets at Madhur Mithaas in Gurugram. Authentic taste, crafted with love since 1995.">
+  <link rel="icon" href="favicon.ico" sizes="any">
+  <link rel="stylesheet" href="styles.css">
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Lato:wght@400;700&display=swap" rel="stylesheet">
+</head>
+<body>
+  <!-- Header -->
+  <header id="header" class="fixed top-0 left-0 right-0 z-50 transition-all duration-300 bg-transparent py-5">
+    <div class="container mx-auto px-4">
+      <div class="flex justify-between items-center">
+        <a href="/" class="text-2xl font-playfair font-bold text-primary">
+          Madhur Mithaas
+        </a>
+
+        <!-- Desktop Navigation -->
+        <nav class="hidden md:flex space-x-8">
+          <a href="/" class="font-medium transition-colors duration-300 text-white hover:text-cream">Home</a>
+          <a href="#about" class="font-medium transition-colors duration-300 text-white hover:text-cream">About</a>
+          <a href="#sweets" class="font-medium transition-colors duration-300 text-white hover:text-cream">Sweets</a>
+          <a href="#gallery" class="font-medium transition-colors duration-300 text-white hover:text-cream">Gallery</a>
+          <a href="#contact" class="font-medium transition-colors duration-300 text-white hover:text-cream">Contact</a>
+        </nav>
+
+        <!-- Mobile Menu Button -->
+        <button id="menu-toggle" class="md:hidden text-primary" aria-label="Open menu">
+          <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="h-6 w-6">
+            <line x1="4" x2="20" y1="12" y2="12"></line>
+            <line x1="4" x2="20" y1="6" y2="6"></line>
+            <line x1="4" x2="20" y1="18" y2="18"></line>
+          </svg>
+        </button>
+      </div>
+    </div>
+
+    <!-- Mobile Navigation -->
+    <div id="mobile-menu" class="md:hidden absolute top-full left-0 right-0 bg-background shadow-lg hidden">
+      <nav class="container mx-auto px-4 py-4 flex flex-col space-y-4">
+        <a href="/" class="text-text-color hover:text-primary py-2 transition-colors duration-300">Home</a>
+        <a href="#about" class="text-text-color hover:text-primary py-2 transition-colors duration-300">About</a>
+        <a href="#sweets" class="text-text-color hover:text-primary py-2 transition-colors duration-300">Sweets</a>
+        <a href="#gallery" class="text-text-color hover:text-primary py-2 transition-colors duration-300">Gallery</a>
+        <a href="#contact" class="text-text-color hover:text-primary py-2 transition-colors duration-300">Contact</a>
+      </nav>
+    </div>
+  </header>
+
+  <main class="min-h-screen bg-background">
+    <!-- Hero Section -->
+    <section class="relative h-[80vh] flex items-center justify-center">
+      <div class="absolute inset-0 z-0">
+        <img
+          src="images/hero-sweet-tray.jpg"
+          alt="Sweet tray"
+          class="object-cover w-full h-full brightness-50"
+        />
+      </div>
+      <div class="relative z-10 text-center px-4 max-w-4xl mx-auto">
+        <h1 class="text-4xl md:text-6xl font-playfair font-bold text-white mb-4 animate-fade-in">
+          Madhur Mithaas
+        </h1>
+        <p class="text-xl md:text-2xl text-cream mb-8 animate-fade-in-delay">
+          Authentic Sweets. Crafted with Love.
+        </p>
+        <a
+          href="#sweets"
+          class="inline-block px-6 py-3 bg-primary text-white rounded-md hover:bg-primary-hover transition-colors duration-300 animate-fade-in-delay-2"
+        >
+          Explore Our Sweets
+        </a>
+      </div>
+    </section>
+
+    <!-- About Us Section -->
+    <section id="about" class="py-16 md:py-24 bg-background">
+      <div class="container mx-auto px-4">
+        <h2 class="text-3xl md:text-4xl font-playfair font-bold text-text-color text-center mb-16">
+          Our Sweet Journey
+        </h2>
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-8 items-center">
+          <div class="relative h-80 md:h-96 rounded-lg overflow-hidden shadow-lg group">
+            <img
+              src="images/shop-interior.jpg"
+              alt="Sweet Shop Interior"
+              class="object-cover w-full h-full transition-transform duration-500 group-hover:scale-105"
+            />
+          </div>
+          <div class="space-y-6">
+            <p class="text-lg text-text-color leading-relaxed">
+              Madhur Mithaas has been a beloved name in Gurugram since 1995. From Kaju Katli to Motichoor Ladoo, our
+              sweets celebrate tradition with purity and flavor.
+            </p>
+            <p class="text-lg text-text-color leading-relaxed">
+              Every sweet at Madhur Mithaas is crafted with the finest ingredients, following time-honored recipes
+              passed down through generations. Our commitment to quality and authentic taste has made us a trusted
+              name for celebrations and everyday indulgence alike.
+            </p>
+            <p class="text-lg text-text-color leading-relaxed">
+              Visit our shop in Sector 14, Gurugram to experience the rich heritage of Indian sweets, where tradition
+              meets excellence in every bite.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Sweets Showcase -->
+    <section id="sweets" class="py-16 md:py-24 bg-cream">
+      <div class="container mx-auto px-4">
+        <h2 class="text-3xl md:text-4xl font-playfair font-bold text-text-color text-center mb-16">
+          Our Delicious Sweets
+        </h2>
+
+        <!-- Desktop Grid -->
+        <div class="hidden md:grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+          <!-- Gulab Jamun -->
+          <div class="bg-white rounded-lg overflow-hidden shadow-lg transition-transform duration-300 hover:-translate-y-2">
+            <div class="relative h-64">
+              <img src="images/gulab-jamun.jpg" alt="Gulab Jamun" class="object-cover w-full h-full" />
+            </div>
+            <div class="p-6">
+              <h3 class="text-xl font-playfair font-bold text-text-color mb-2">Gulab Jamun</h3>
+              <p class="text-primary font-medium mb-4">₹280/kg</p>
+              <button class="w-full px-4 py-2 bg-primary text-white rounded-md hover:bg-primary-hover transition-colors duration-300">
+                Enquire Now
+              </button>
+            </div>
+          </div>
+
+          <!-- Kaju Katli -->
+          <div class="bg-white rounded-lg overflow-hidden shadow-lg transition-transform duration-300 hover:-translate-y-2">
+            <div class="relative h-64">
+              <img src="images/kaju-katli.jpg" alt="Kaju Katli" class="object-cover w-full h-full" />
+            </div>
+            <div class="p-6">
+              <h3 class="text-xl font-playfair font-bold text-text-color mb-2">Kaju Katli</h3>
+              <p class="text-primary font-medium mb-4">₹600/kg</p>
+              <button class="w-full px-4 py-2 bg-primary text-white rounded-md hover:bg-primary-hover transition-colors duration-300">
+                Enquire Now
+              </button>
+            </div>
+          </div>
+
+          <!-- Rasgulla -->
+          <div class="bg-white rounded-lg overflow-hidden shadow-lg transition-transform duration-300 hover:-translate-y-2">
+            <div class="relative h-64">
+              <img src="images/rasgulla.jpg" alt="Rasgulla" class="object-cover w-full h-full" />
+            </div>
+            <div class="p-6">
+              <h3 class="text-xl font-playfair font-bold text-text-color mb-2">Rasgulla</h3>
+              <p class="text-primary font-medium mb-4">₹250/kg</p>
+              <button class="w-full px-4 py-2 bg-primary text-white rounded-md hover:bg-primary-hover transition-colors duration-300">
+                Enquire Now
+              </button>
+            </div>
+          </div>
+
+          <!-- Soan Papdi -->
+          <div class="bg-white rounded-lg overflow-hidden shadow-lg transition-transform duration-300 hover:-translate-y-2">
+            <div class="relative h-64">
+              <img src="images/soan-papdi.jpg" alt="Soan Papdi" class="object-cover w-full h-full" />
+            </div>
+            <div class="p-6">
+              <h3 class="text-xl font-playfair font-bold text-text-color mb-2">Soan Papdi</h3>
+              <p class="text-primary font-medium mb-4">₹180/kg</p>
+              <button class="w-full px-4 py-2 bg-primary text-white rounded-md hover:bg-primary-hover transition-colors duration-300">
+                Enquire Now
+              </button>
+            </div>
+          </div>
+
+          <!-- Motichoor Ladoo -->
+          <div class="bg-white rounded-lg overflow-hidden shadow-lg transition-transform duration-300 hover:-translate-y-2">
+            <div class="relative h-64">
+              <img src="images/motichoor-ladoo.jpg" alt="Motichoor Ladoo" class="object-cover w-full h-full" />
+            </div>
+            <div class="p-6">
+              <h3 class="text-xl font-playfair font-bold text-text-color mb-2">Motichoor Ladoo</h3>
+              <p class="text-primary font-medium mb-4">₹320/kg</p>
+              <button class="w-full px-4 py-2 bg-primary text-white rounded-md hover:bg-primary-hover transition-colors duration-300">
+                Enquire Now
+              </button>
+            </div>
+          </div>
+
+          <!-- Jalebi -->
+          <div class="bg-white rounded-lg overflow-hidden shadow-lg transition-transform duration-300 hover:-translate-y-2">
+            <div class="relative h-64">
+              <img src="images/jalebi.jpg" alt="Jalebi" class="object-cover w-full h-full" />
+            </div>
+            <div class="p-6">
+              <h3 class="text-xl font-playfair font-bold text-text-color mb-2">Jalebi</h3>
+              <p class="text-primary font-medium mb-4">₹220/kg</p>
+              <button class="w-full px-4 py-2 bg-primary text-white rounded-md hover:bg-primary-hover transition-colors duration-300">
+                Enquire Now
+              </button>
+            </div>
+          </div>
+        </div>
+
+        <!-- Mobile Carousel -->
+        <div class="md:hidden">
+          <div class="flex overflow-x-auto pb-8 space-x-4 snap-x">
+            <!-- Gulab Jamun -->
+            <div class="snap-center flex-shrink-0 w-[85%]">
+              <div class="bg-white rounded-lg overflow-hidden shadow-lg transition-transform duration-300 hover:-translate-y-2">
+                <div class="relative h-64">
+                  <img src="images/gulab-jamun.jpg" alt="Gulab Jamun" class="object-cover w-full h-full" />
+                </div>
+                <div class="p-6">
+                  <h3 class="text-xl font-playfair font-bold text-text-color mb-2">Gulab Jamun</h3>
+                  <p class="text-primary font-medium mb-4">₹280/kg</p>
+                  <button class="w-full px-4 py-2 bg-primary text-white rounded-md hover:bg-primary-hover transition-colors duration-300">
+                    Enquire Now
+                  </button>
+                </div>
+              </div>
+            </div>
+
+            <!-- Kaju Katli -->
+            <div class="snap-center flex-shrink-0 w-[85%]">
+              <div class="bg-white rounded-lg overflow-hidden shadow-lg transition-transform duration-300 hover:-translate-y-2">
+                <div class="relative h-64">
+                  <img src="images/kaju-katli.jpg" alt="Kaju Katli" class="object-cover w-full h-full" />
+                </div>
+                <div class="p-6">
+                  <h3 class="text-xl font-playfair font-bold text-text-color mb-2">Kaju Katli</h3>
+                  <p class="text-primary font-medium mb-4">₹600/kg</p>
+                  <button class="w-full px-4 py-2 bg-primary text-white rounded-md hover:bg-primary-hover transition-colors duration-300">
+                    Enquire Now
+                  </button>
+                </div>
+              </div>
+            </div>
+
+            <!-- Rasgulla -->
+            <div class="snap-center flex-shrink-0 w-[85%]">
+              <div class="bg-white rounded-lg overflow-hidden shadow-lg transition-transform duration-300 hover:-translate-y-2">
+                <div class="relative h-64">
+                  <img src="images/rasgulla.jpg" alt="Rasgulla" class="object-cover w-full h-full" />
+                </div>
+                <div class="p-6">
+                  <h3 class="text-xl font-playfair font-bold text-text-color mb-2">Rasgulla</h3>
+                  <p class="text-primary font-medium mb-4">₹250/kg</p>
+                  <button class="w-full px-4 py-2 bg-primary text-white rounded-md hover:bg-primary-hover transition-colors duration-300">
+                    Enquire Now
+                  </button>
+                </div>
+              </div>
+            </div>
+
+            <!-- Soan Papdi -->
+            <div class="snap-center flex-shrink-0 w-[85%]">
+              <div class="bg-white rounded-lg overflow-hidden shadow-lg transition-transform duration-300 hover:-translate-y-2">
+                <div class="relative h-64">
+                  <img src="images/soan-papdi.jpg" alt="Soan Papdi" class="object-cover w-full h-full" />
+                </div>
+                <div class="p-6">
+                  <h3 class="text-xl font-playfair font-bold text-text-color mb-2">Soan Papdi</h3>
+                  <p class="text-primary font-medium mb-4">₹180/kg</p>
+                  <button class="w-full px-4 py-2 bg-primary text-white rounded-md hover:bg-primary-hover transition-colors duration-300">
+                    Enquire Now
+                  </button>
+                </div>
+              </div>
+            </div>
+
+            <!-- Motichoor Ladoo -->
+            <div class="snap-center flex-shrink-0 w-[85%]">
+              <div class="bg-white rounded-lg overflow-hidden shadow-lg transition-transform duration-300 hover:-translate-y-2">
+                <div class="relative h-64">
+                  <img src="images/motichoor-ladoo.jpg" alt="Motichoor Ladoo" class="object-cover w-full h-full" />
+                </div>
+                <div class="p-6">
+                  <h3 class="text-xl font-playfair font-bold text-text-color mb-2">Motichoor Ladoo</h3>
+                  <p class="text-primary font-medium mb-4">₹320/kg</p>
+                  <button class="w-full px-4 py-2 bg-primary text-white rounded-md hover:bg-primary-hover transition-colors duration-300">
+                    Enquire Now
+                  </button>
+                </div>
+              </div>
+            </div>
+
+            <!-- Jalebi -->
+            <div class="snap-center flex-shrink-0 w-[85%]">
+              <div class="bg-white rounded-lg overflow-hidden shadow-lg transition-transform duration-300 hover:-translate-y-2">
+                <div class="relative h-64">
+                  <img src="images/jalebi.jpg" alt="Jalebi" class="object-cover w-full h-full" />
+                </div>
+                <div class="p-6">
+                  <h3 class="text-xl font-playfair font-bold text-text-color mb-2">Jalebi</h3>
+                  <p class="text-primary font-medium mb-4">₹220/kg</p>
+                  <button class="w-full px-4 py-2 bg-primary text-white rounded-md hover:bg-primary-hover transition-colors duration-300">
+                    Enquire Now
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Gallery Section -->
+    <section id="gallery" class="py-16 md:py-24 bg-background">
+      <div class="container mx-auto px-4">
+        <h2 class="text-3xl md:text-4xl font-playfair font-bold text-text-color text-center mb-16">
+          Sweet Moments
+        </h2>
+
+        <div class="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4">
+          <!-- Gallery Image 1 (Featured) -->
+          <div class="relative overflow-hidden rounded-lg shadow-md group col-span-2 row-span-2">
+            <div class="aspect-square w-full h-full">
+              <img
+                src="images/gallery-1.jpg"
+                alt="Festive sweet box"
+                class="object-cover w-full h-full transition-transform duration-500 group-hover:scale-110"
+              />
+            </div>
+            <div class="absolute inset-0 bg-primary bg-opacity-0 group-hover:bg-opacity-20 transition-all duration-300"></div>
+          </div>
+
+          <!-- Gallery Image 2 -->
+          <div class="relative overflow-hidden rounded-lg shadow-md group">
+            <div class="aspect-square w-full h-full">
+              <img
+                src="images/gallery-2.jpg"
+                alt="Assorted sweets"
+                class="object-cover w-full h-full transition-transform duration-500 group-hover:scale-110"
+              />
+            </div>
+            <div class="absolute inset-0 bg-primary bg-opacity-0 group-hover:bg-opacity-20 transition-all duration-300"></div>
+          </div>
+
+          <!-- Gallery Image 3 -->
+          <div class="relative overflow-hidden rounded-lg shadow-md group">
+            <div class="aspect-square w-full h-full">
+              <img
+                src="images/gallery-3.jpg"
+                alt="Sweet preparation"
+                class="object-cover w-full h-full transition-transform duration-500 group-hover:scale-110"
+              />
+            </div>
+            <div class="absolute inset-0 bg-primary bg-opacity-0 group-hover:bg-opacity-20 transition-all duration-300"></div>
+          </div>
+
+          <!-- Gallery Image 4 -->
+          <div class="relative overflow-hidden rounded-lg shadow-md group">
+            <div class="aspect-square w-full h-full">
+              <img
+                src="images/gallery-4.jpg"
+                alt="Diwali special sweets"
+                class="object-cover w-full h-full transition-transform duration-500 group-hover:scale-110"
+              />
+            </div>
+            <div class="absolute inset-0 bg-primary bg-opacity-0 group-hover:bg-opacity-20 transition-all duration-300"></div>
+          </div>
+
+          <!-- Gallery Image 5 -->
+          <div class="relative overflow-hidden rounded-lg shadow-md group">
+            <div class="aspect-square w-full h-full">
+              <img
+                src="images/gallery-5.jpg"
+                alt="Shop interior"
+                class="object-cover w-full h-full transition-transform duration-500 group-hover:scale-110"
+              />
+            </div>
+            <div class="absolute inset-0 bg-primary bg-opacity-0 group-hover:bg-opacity-20 transition-all duration-300"></div>
+          </div>
+
+          <!-- Gallery Image 6 -->
+          <div class="relative overflow-hidden rounded-lg shadow-md group">
+            <div class="aspect-square w-full h-full">
+              <img
+                src="images/gallery-6.jpg"
+                alt="Sweet display"
+                class="object-cover w-full h-full transition-transform duration-500 group-hover:scale-110"
+              />
+            </div>
+            <div class="absolute inset-0 bg-primary bg-opacity-0 group-hover:bg-opacity-20 transition-all duration-300"></div>
+          </div>
+
+          <!-- Gallery Image 7 -->
+          <div class="relative overflow-hidden rounded-lg shadow-md group">
+            <div class="aspect-square w-full h-full">
+              <img
+                src="images/gallery-7.jpg"
+                alt="Bulk order packaging"
+                class="object-cover w-full h-full transition-transform duration-500 group-hover:scale-110"
+              />
+            </div>
+            <div class="absolute inset-0 bg-primary bg-opacity-0 group-hover:bg-opacity-20 transition-all duration-300"></div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="py-16 md:py-24 bg-cream">
+      <div class="container mx-auto px-4">
+        <h2 class="text-3xl md:text-4xl font-playfair font-bold text-text-color text-center mb-16">
+          Get in Touch
+        </h2>
+
+        <div class="grid grid-cols-1 lg:grid-cols-2 gap-12">
+          <div>
+            <form class="space-y-6">
+              <div>
+                <label for="name" class="block text-text-color text-sm font-medium mb-2">
+                  Name
+                </label>
+                <input
+                  type="text"
+                  id="name"
+                  class="w-full px-4 py-3 rounded-md border border-gray-300 focus:outline-none focus:ring-2 focus:ring-primary"
+                  placeholder="Your name"
+                />
+              </div>
+              <div>
+                <label for="email" class="block text-text-color text-sm font-medium mb-2">
+                  Email
+                </label>
+                <input
+                  type="email"
+                  id="email"
+                  class="w-full px-4 py-3 rounded-md border border-gray-300 focus:outline-none focus:ring-2 focus:ring-primary"
+                  placeholder="Your email"
+                />
+              </div>
+              <div>
+                <label for="message" class="block text-text-color text-sm font-medium mb-2">
+                  Message
+                </label>
+                <textarea
+                  id="message"
+                  rows="5"
+                  class="w-full px-4 py-3 rounded-md border border-gray-300 focus:outline-none focus:ring-2 focus:ring-primary"
+                  placeholder="Your message"
+                ></textarea>
+              </div>
+              <button
+                type="submit"
+                class="px-6 py-3 bg-primary text-white rounded-md hover:bg-primary-hover transition-colors duration-300"
+              >
+                Send Message
+              </button>
+            </form>
+          </div>
+
+          <div class="space-y-8">
+            <div class="h-64 md:h-80 rounded-lg overflow-hidden shadow-lg">
+              <!-- Google Maps Embed would go here -->
+              <iframe 
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3506.2233913121413!2d77.02862841508096!3d28.499041982472428!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x390d1a9c31eaaa7b%3A0x88f3abd98f2f7cd9!2sSector%2014%2C%20Gurugram%2C%20Haryana%20122001!5e0!3m2!1sen!2sin!4v1651825207329!5m2!1sen!2sin" 
+                width="100%" 
+                height="100%" 
+                style="border:0;" 
+                allowfullscreen="" 
+                loading="lazy" 
+                referrerpolicy="no-referrer-when-downgrade">
+              </iframe>
+            </div>
+
+            <div class="space-y-4">
+              <h3 class="text-xl font-playfair font-bold text-text-color">Contact Information</h3>
+              <div class="space-y-3">
+                <div class="flex items-start">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="h-5 w-5 text-primary mt-1 mr-3">
+                    <path d="M20 10c0 6-8 12-8 12s-8-6-8-12a8 8 0 0 1 16 0Z"></path>
+                    <circle cx="12" cy="10" r="3"></circle>
+                  </svg>
+                  <p class="text-text-color">Shop No. 42, Sector 14 Market, Gurugram, Haryana 122001</p>
+                </div>
+                <div class="flex items-center">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="h-5 w-5 text-primary mr-3">
+                    <path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"></path>
+                  </svg>
+                  <p class="text-text-color">+91 98765 43210</p>
+                </div>
+                <div class="flex items-center">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="h-5 w-5 text-primary mr-3">
+                    <rect width="20" height="16" x="2" y="4" rx="2"></rect>
+                    <path d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7"></path>
+                  </svg>
+                  <p class="text-text-color">info@madhurmithaas.com</p>
+                </div>
+                <div class="flex items-start">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="h-5 w-5 text-primary  stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="h-5 w-5 text-primary mt-1 mr-3">
+                    <circle cx="12" cy="12" r="10"></circle>
+                    <polyline points="12 6 12 12 16 14"></polyline>
+                  </svg>
+                  <div>
+                    <p class="text-text-color">Monday - Saturday: 8:00 AM - 9:00 PM</p>
+                    <p class="text-text-color">Sunday: 9:00 AM - 8:00 PM</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- Footer -->
+  <footer class="bg-text-color text-white py-12">
+    <div class="container mx-auto px-4">
+      <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+        <div>
+          <h3 class="text-2xl font-playfair font-bold mb-4">Madhur Mithaas</h3>
+          <p class="text-cream/80 mb-6">Authentic Indian sweets crafted with love and tradition since 1995.</p>
+          <div class="flex space-x-4">
+            <a
+              href="https://instagram.com"
+              target="_blank"
+              rel="noopener noreferrer"
+              class="text-white hover:text-primary transition-colors duration-300"
+              aria-label="Instagram"
+            >
+              <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="h-6 w-6">
+                <rect width="20" height="20" x="2" y="2" rx="5" ry="5"></rect>
+                <path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"></path>
+                <line x1="17.5" x2="17.51" y1="6.5" y2="6.5"></line>
+              </svg>
+            </a>
+            <a
+              href="https://facebook.com"
+              target="_blank"
+              rel="noopener noreferrer"
+              class="text-white hover:text-primary transition-colors duration-300"
+              aria-label="Facebook"
+            >
+              <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="h-6 w-6">
+                <path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"></path>
+              </svg>
+            </a>
+          </div>
+        </div>
+
+        <div>
+          <h4 class="text-lg font-bold mb-4">Quick Links</h4>
+          <ul class="space-y-2">
+            <li>
+              <a href="/" class="text-cream/80 hover:text-primary transition-colors duration-300">
+                Home
+              </a>
+            </li>
+            <li>
+              <a href="#about" class="text-cream/80 hover:text-primary transition-colors duration-300">
+                About Us
+              </a>
+            </li>
+            <li>
+              <a href="#sweets" class="text-cream/80 hover:text-primary transition-colors duration-300">
+                Our Sweets
+              </a>
+            </li>
+            <li>
+              <a href="#gallery" class="text-cream/80 hover:text-primary transition-colors duration-300">
+                Gallery
+              </a>
+            </li>
+            <li>
+              <a href="#contact" class="text-cream/80 hover:text-primary transition-colors duration-300">
+                Contact
+              </a>
+            </li>
+          </ul>
+        </div>
+
+        <div>
+          <h4 class="text-lg font-bold mb-4">Visit Us</h4>
+          <address class="not-italic text-cream/80">
+            Shop No. 42, Sector 14 Market,
+            <br />
+            Gurugram, Haryana 122001
+            <br />
+            <br />
+            <span class="block mb-1">Phone: +91 98765 43210</span>
+            <span class="block">Email: info@madhurmithaas.com</span>
+          </address>
+        </div>
+      </div>
+
+      <div class="border-t border-white/10 mt-12 pt-6 text-center">
+        <p class="text-cream/70">© 2025 Madhur Mithaas. All rights reserved.</p>
+      </div>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
